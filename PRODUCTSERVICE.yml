@@ -1,1 +1,15 @@
-welcome.message: "Hi"
+welcome:
+  message: "Hi"
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:1001/eureka
+management:
+  server:
+    port: 1004
+  endpoints:
+    web:
+      exposure:
+        include: "*" 
